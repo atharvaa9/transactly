@@ -1,7 +1,8 @@
 // backend/db.js
+import { SECRERT_CONNECT } from './config';
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://atharvaparte789:c1WLGdYEqo1zRvq3@cluster0.qfs4lp3.mongodb.net/transactly")
+mongoose.connect(SECRERT_CONNECT)
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
